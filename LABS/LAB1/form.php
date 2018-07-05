@@ -10,7 +10,7 @@
     $file = fopen("times.txt","w");
     fwrite($file,$num);
     fclose($file);
-    $abc = 10;
+    $abc = 8;
   ?>  
     <body style = "font-size: 2em">
 	  <strong> 
@@ -22,10 +22,10 @@
 	  你猜的數字為： <?php print("$_POST[fnumber]"); ?>
 	  <br/>
       <?php if($abc > "$_POST[fnumber]")
-      {echo"數字太小";}
+      {echo"再多一點";}
       else if ($abc < "$_POST[fnumber]")
-      {echo"數字太大";}
-      else{echo"猜對了";}
+      {echo"太多了啦";}
+      else{echo"U got it";}
       ?> 	
 	  <br/>
 	  你總共猜了： <?php echo "$num" ?> 次
