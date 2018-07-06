@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Border Image</title>
+		<style type="text/css">
+		body { width: 80% ; margin: 0 auto }
+			p {
+				min-width: 300px;
+                max-width: 1200px;
+				width: 1200px;
+				height: 150px;
+				border: 30px solid #ffffff;}
+			p.one {
+				font-size: 36pt;
+				-moz-border-image: url("border.png") 33 33 33 33 stretch;
+				-webkit-border-image: url("border.png") 33 33 33 33 stretch;
+				border-image: url("border.png") 33 33 33 33 stretch;
+			    padding: 15pt}
+			p.two {
+				font-size: 36pt;
+				-moz-border-image: url("border.png") 33 33 33 33 round;
+				-webkit-border-image: url("border.png") 33 33 33 33 round;
+				border-image: url("border.png") 33 33 33 33 round;
+			    padding: 15pt}
+		</style>
+	</head>
+	<body> 
+		<p class="one"><font color="green">孤獨是會上癮的</font></p>
+		<p class="two"><font color="green">無法負荷 卻還附和</font></p>
+	</body>
+</html>
