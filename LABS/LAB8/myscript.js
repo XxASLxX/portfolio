@@ -8,6 +8,6 @@ function start()
     else{
 		document.getElementById('image').src = "./UOC SEAL B.png"
 	};
-    setInterval(start,1000)
 }
+setInterval(start,1000);
 window.addEventListener("load",start,false);
